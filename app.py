@@ -1,3 +1,7 @@
+import sys
+
+sys.path.append('/opt/app/vendor')
+
 from graphene import ObjectType, String, Schema
 
 class Query(ObjectType):
@@ -11,4 +15,9 @@ class Query(ObjectType):
         return 'fuga'
 
 schema = Schema(query=Query)
+
+if __name__ == '__main__':
+	result = schema.execute(sys.argv[1])
+	print(result.data)
+
 
