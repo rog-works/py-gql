@@ -1,9 +1,9 @@
 class Model(object):
     @classmethod
-    def post(path: str, params: dict, authorize: bool = False) -> dict:
+    def post(cls, path: str, params: dict) -> dict:
         return {
             'id': 'id',
-            'type': 'type',
+            'kind': 'kind',
             'stat': 1,
             'name': 'name',
         }

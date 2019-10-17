@@ -14,9 +14,9 @@ if __name__ == '__main__':
 """
 # examples
 query {
-  device(id: "id", type: "type") {
+  device(id: "id", kind: "kind") {
     id
-    type
+    kind
     stat
   }
 }

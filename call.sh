@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python main.py 'query { device(id: "id", type: "type") { id type stat } }'
+python main.py 'query { device(id: "hoge", kind: "fuga") { id stat } }'

@@ -1,11 +1,8 @@
 import os
 import sys
-import logging
+from log import logger
 
 sys.path.append(f'{os.getcwd()}/vendor')
-
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
 
 
 def started():
